@@ -38,7 +38,8 @@ This bundle should do 2 things:
 
 I have had over time the questionable pleasure of going through multiple penetration-testing reports carried out on websites published by the eZPublish/eZPlatform CMS.
 Although they have often provided real value, feeding to the developer team unexpected findings, they have also, more often than not, produced a considerable amount of false positives and low-value discoveries, while at the same time missing out some glaring configuration problems.
-This is not necessarily the fault of an incompetent pen tester or low quality tool: it is in general one of the downsides of the nature of black-box testing. It is also compounded by the highly dynamic natire of websites powered by CMS platforms.
+This is not necessarily the fault of an incompetent pen tester or low quality tool: it is in general one of the downsides of black-box testing. It is also compounded by the highly dynamic nature of websites powered by CMS platforms.
+
 In any case, the common, best-case outcome of the pen-testing exercise seems to be:
 - developers fix all the reported, low-risk issues
 - the pen testers run the scan again, and see all green

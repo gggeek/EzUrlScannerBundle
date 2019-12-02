@@ -12,15 +12,16 @@ The main scenario that it aims to support is the following: after a site has bee
 This bundle should do 2 things:
 
 1. produce a list of urls from all known eZ-legacy and Symfony routes, to be used with any penetration testing tool of choice
-  - using a minimal set of rules for creating permutations on route parameters
-  - also, well known eZ-specific non-php routes should be included, such as f.e. /var/storage/..., /settings/... or /extension/xxx/settings/...
+    - using a minimal set of rules for creating permutations on route parameters
+    - also, well known eZ-specific non-php routes should be included, such as f.e. /var/storage/..., /settings/... or /extension/xxx/settings/...
 
 2. provide a simple penetration testing tool to scan all of the URLs in the above list, taking into account eZ-specific requirements, such as f.e.:
     - logged-in scan & logged-out scan
     - scan the whole list of urls multiple times, with different hostnames (siteaccess testing)
     - scan the whole list of urls twice, once with http and once with https (check for proper redirection to https)
     - scan each url first as logged-in user then as anon user (check for unintended cache sharing by Varnish)
- And the ususal minimum set of features for a web scanner:
+    
+    And the ususal minimum set of features for a web scanner:
     - report number of responses per type: 200, 30x, 40x, 50x
     - variable wait time between requests
     - variable number of concurrent requests
